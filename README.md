@@ -18,10 +18,13 @@ Excel Handling: OpenPyXL
 Steps to run this project in remote system:
 1) Clone the repository
 2) Create and activate a virtual environment 
+        For creating virtual environment- python-m venv <virtual_env_name>
+        For activating the virtual environment- <virtual_env_name>\Scripts\activate
 3) Install dependencies
-4) Run migrations
-5) Create a superuser
-6) Start the server
+        pip install -r requirements.txt
+4) Start the server
+        cd employee_task
+        python manage.py runserver
    
 API Endpoints
 **FOR CRUD OPERATION**
