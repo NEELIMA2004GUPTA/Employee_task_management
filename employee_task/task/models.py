@@ -6,7 +6,8 @@ class Task(models.Model):
     description = models.TextField(blank=True)
     completed = models.BooleanField(default=False)
     assigned_to = models.ForeignKey(User, on_delete=models.CASCADE, related_name="tasks")
+    scheduled_date = models.DateField(null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return f"{self.title} - {self.scheduled_date}"
 
